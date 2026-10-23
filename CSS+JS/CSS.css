@@ -1,0 +1,254 @@
+.headContainer{
+    position: sticky;
+    top: 0px;
+    z-index: 50;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1600px;
+    height: 50px;
+    justify-self: center;
+    column-gap: 300px;
+
+}
+
+.myUl{
+    display: flex;
+    text-align: center;
+    column-gap: 30px;
+}
+
+.firstH1{
+    font-size: 2em;
+    text-shadow: 0px 5px 5px;
+}
+.li{
+    list-style-type: none;
+}
+.liBtn{
+    font-family: cursive;
+    font-size: 1.2em;
+    padding: 5px 20px;
+    border-radius: 50px;
+    border-style: outset;
+    border-width: 2px;
+    border-color: transparent;
+    background-color: transparent;
+    transition: background-color 0.15s;
+    border-color: rgb(0, 0, 0);
+    box-shadow: 0px 3px 0px;
+    transition: all 0.5s;
+}
+
+.liBtn:active{
+    transform: translateY(5px);
+    box-shadow: none;
+    transition: all 0.1s;
+}
+
+.hr1{
+    height: 5px;
+    background-color: rgb(208, 159, 159);
+    border-style: outset;
+    border-width: 1px;
+    box-shadow: 0px 5px 10px;
+    margin-bottom: 0px;
+    border-style: none;
+}
+/* Main - selfIntroduction*/ 
+.mainDiv{
+    width: 1600px;
+    height: 500px;
+   
+    justify-self: center;
+    display: grid;
+    margin-top: 50px;
+}
+
+.selfIntroduction{
+    height: 500px;
+    width: 1500px;
+    justify-self: center;
+    display: flex;
+    padding: 0px 50px;
+    display: flex;
+    .imageIntro{
+        width: 8000px;
+        display: grid;
+        position: relative;
+        .myImage{
+            background-image: url("https://i1.sndcdn.com/artworks-000099010174-it3xrp-t500x500.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            justify-self: center;
+            height: 400px;
+            width: 400px;
+            margin-top: 20px;
+            border-radius: 500px;
+            transition: 0.9s;
+        }
+        .myImage:hover{
+            background-image: url("./img/image.png");
+            z-index: 10;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            justify-self: center;
+            height: 400px;
+            width: 400px;
+            margin-top: 20px;
+            margin-top: 20px;
+            border-radius: 500px;
+            transform: translateY(-20px);
+            transition: 0.7s ease-out;
+           
+        }
+        .myName{
+            text-align: center;
+            font-family: cursive;
+            text-decoration: overline 5px solid ;
+            height: 50px;
+            margin-top: 50px;
+        }
+    }
+
+    .selfP{
+    
+        padding: 60px 100px;
+        font-size: 1.5em;
+        overflow: auto;
+   
+    }
+    .selfP::-webkit-scrollbar{
+        width: 10px;
+    }
+    .selfP::-webkit-scrollbar-track{
+        background-color: rgb(0, 0, 0);
+        border-radius: 20px;
+  
+    }
+    .selfP::-webkit-scrollbar-thumb{
+        background-color: rgb(0, 0, 0); 
+        border-radius: 20px;
+   
+    }
+    .selfP::-webkit-scrollbar-thumb:hover{
+        background-color: rgb(121, 121, 121);
+        transition: background-color 0.5s;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.learnedLang{
+    width: 1600px;
+    height: 800px;
+    justify-self: center;
+    margin-top: 300px;
+    .H2{
+        text-align: center;
+        padding-top: 20px;
+        margin-bottom: -40px;
+        font-size: 3em;
+        font-weight: bold;
+        font-family: cursive;
+    }
+    .langContainer{
+        width: 1500px;
+        height: 700px;
+        justify-self: center;
+        margin-top: 50px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        column-gap: 5px;
+
+        & .langImg{
+            height: 500px;
+            width: 350px;
+            background-color: transparent;
+            margin-bottom: -50px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-radius: 20px;
+            transition: all 0.5s;
+            border-style: none;
+
+            animation-timeline: view();
+        }
+        & .langImg:hover{
+            transform: translateY(-40px);
+            box-shadow: 0px 30px 50px;
+            transition: all 0.4s;
+            z-index: 10;
+        }
+
+        & .langImg1{
+            animation: scrollToRight 5s ease-in;
+            animation-timeline: view();
+            animation-range: entry 0% cover 40% ;
+            background-image: url("./img/ChatGPT\ Image\ Sep\ 13\,\ 2026\,\ 10_53_57\ AM.png");
+        }
+        & .langImg2{
+            animation: scrollUp 0.5s ease-out;
+            animation-timeline: view();
+            animation-range: entry 0% cover 30% ;
+            background-image: url("./img/ChatGPT\ Image\ Sep\ 13\,\ 2026\,\ 10_59_59\ AM.png");
+        }
+        & .langImg3{
+            animation: scrollUp 0.5s ease-out;
+            animation-timeline: view();
+            animation-range: entry 0% cover 30% ;
+            background-image: url("./img/ChatGPT\ Image\ Sep\ 13\,\ 2026\,\ 11_00_13\ AM.png");
+        }
+        & .langImg4{
+            animation: scrollToLeft 5s ease-in;
+            animation-timeline: view();
+            animation-range: entry 0% cover 40% ;
+            background-image: url("./img/ChatGPT\ Image\ Sep\ 13\,\ 2026\,\ 11_00_24\ AM.png");
+        }
+    }
+}
+
+@keyframes scrollToRight{
+    0%{
+        opacity: 0;
+        transform: translateX(-120px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scrollToLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(120px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scrollUp{
+    0%{
+        transform: translateY(500px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
